@@ -3,7 +3,7 @@
  <head> 
   <meta charset="utf-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <title>سوپرمارکت آنلاین — دموی تک‌فایلی</title> 
+  <title>سوپرمارکت آنلاین </title> 
   <meta name="description" content="دموی سوپرمارکت آنلاین: جستجو، دسته‌بندی، سبد خرید، کدتخفیف، زمان‌بندی ارسال"> 
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin> 
   <script src="https://cdn.tailwindcss.com"></script> 
@@ -50,13 +50,13 @@
   <section class="bg-gradient-to-l from-primary to-primaryDark text-white"> 
    <div class="max-w-6xl mx-auto px-4 py-8 grid md:grid-cols-2 gap-6 items-center"> 
     <div> 
-     <h1 class="text-2xl md:text-3xl font-bold leading-9">تحویل سریعِ اقلام روزمره درِ منزل</h1> 
-     <p class="mt-2 text-white/90">از میوه و لبنیات تا تنقلات و بهداشتی—همه در چند دقیقه داخل سبد شما.</p> 
+     <h1 class="text-2xl md:text-3xl font-bold leading-9">تحویل سریع اقلام روزمره در منزل</h1> 
+     <p class="mt-2 text-white/90">میوه و لبنیات تا تنقلات و بهداشتی همه در چند دقیقه داخل سبد شما </p> 
      <div class="mt-4 flex gap-2"> <button id="openSlots" class="rounded-2xl bg-white text-primary px-4 py-2 font-semibold hover:bg_white/90">انتخاب زمان ارسال</button> <a href="#products" class="rounded-2xl border border-white px-4 py-2 hover:bg-white/10">مشاهده محصولات</a> 
      </div> 
     </div> 
     <div class="hidden md:block text-6xl text-center">
-     🛵💨
+      🛵💨 
     </div> 
    </div> 
   </section> <!-- دسته‌بندی‌ها --> 
@@ -79,21 +79,37 @@
     <div class="text-sm grid grid-cols-2 gap-y-1"> <span>جمع جز:</span><span class="text-left" id="subtotal">0</span> <span>تخفیف:</span><span class="text-left text-green-600" id="discount">0</span> <span>هزینه ارسال:</span><span class="text-left" id="shipping">15000</span> <span class="font-bold">مبلغ قابل پرداخت:</span><span class="text-left font-bold" id="payable">0</span> 
     </div> <button id="checkout" class="w-full rounded-2xl bg-primary hover:bg-primaryDark text-white py-3 font-bold">ثبت سفارش</button> 
    </div> 
-  </aside> <!-- نوار پایین موبایل --> 
+  </aside><!-- نوار پایین موبایل --> 
   <nav class="md:hidden fixed bottom-0 inset-x-0 bg-white border-t z-40"> 
-   <div class="max-w-6xl mx-auto px-4 py-2 grid grid-cols-4 text-center text-sm"> <a href="#" class="py-1">🏠
+   <div class="max-w-6xl mx-auto px-4 py-2 grid grid-cols-4 text-center text-sm"> <!-- خانه --> <a href="#" class="py-1 flex flex-col items-center"> 
+     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto text-gray-700" fill="none" viewbox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9.75L12 3l9 6.75v10.5a1.5 1.5 0 01-1.5 1.5h-15A1.5 1.5 0 013 20.25V9.75z" /> 
+     </svg> 
      <div>
-      خانه
-     </div></a> <button id="openCartBottom" class="py-1">🛒
+       خانه 
+     </div> </a> <!-- سبد خرید --> <button id="openCartBottom" class="py-1 flex flex-col items-center"> 
+     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto text-gray-700" fill="none" viewbox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 8h14l-2-8M10 21h4" /> 
+     </svg> 
      <div>
-      سبد
-     </div></button> <a href="#products" class="py-1">🧺
+       سبد 
+     </div> </button> <!-- محصولات --> <a href="#products" class="py-1 flex flex-col items-center"> 
+     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto text-gray-700" fill="none" viewbox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V7a2 2 0 00-2-2H6a2 2 0 00-2 2v6m16 0v6a2 2 0 01-2 2H6a2 2 0 01-2-2v-6" /> 
+     </svg> 
      <div>
-      محصولات
-     </div></a> <button id="openSlots2" class="py-1">⏱️
+       محصولات 
+     </div> </a> <!-- زمان ارسال --> <button id="openSlots2" class="py-1 flex flex-col items-center"> 
+     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto text-gray-700" fill="none" viewbox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6 0a9 9 0 11-18 0 9 9 0 0118 0z" /> 
+     </svg> 
      <div>
-      زمان ارسال
-     </div></button> 
+       <!-- اضافه کردن فونت وزیر -->
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" type="text/css" />
+
+<style>
+  /* اعمال فونت وزیر به کل سایت */
+  body {
+    font-family: 'Vazir', sans-serif;
+  }
+</style>       زمان ارسال 
+     </div> </button> 
    </div> 
   </nav> <!-- مودال‌ها --> <dialog id="loginModal" class="rounded-2xl p-0 w-11/12 md:w-[420px]"> 
    <form method="dialog" class="p-4 space-y-3"> 
@@ -113,7 +129,7 @@
   </dialog> <dialog id="orderDone" class="rounded-2xl p-0 w-11/12 md:w-[420px]"> 
    <form method="dialog" class="p-4 space-y-3 text-center"> 
     <div class="text-5xl">
-     ✅
+      ✅ 
     </div> 
     <h3 class="font-bold text-lg">سفارش ثبت شد</h3> 
     <p class="text-sm text-gray-600">این یک پیش‌نمایش است و پرداخت واقعی انجام نمی‌شود.</p> <button class="w-full rounded-2xl border py-2">باشه</button> 
@@ -124,8 +140,8 @@
     const categories = [
       { id: 'all', name: 'همه' },
       { id: 'dairy', name: 'لبنیات' },
-      { id: 'bakery', name: 'نانوایی' },
-      { id: 'fruits', name: 'میوه و سبزی' },
+      { id: 'bakery', name: 'نان' },
+      { id: 'fruits', name: 'میوه ' },
       { id: 'drinks', name: 'نوشیدنی' },
       { id: 'snacks', name: 'تنقلات' },
       { id: 'hygiene', name: 'بهداشت' },
